@@ -1,0 +1,30 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Crea Artista</h1>
+
+
+  <form action="Artista/crearArtista" method="post">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input required type="text" class="form-control" placeholder="Nombre" name="nombre">
+    </div>
+
+    <div class="form-group">
+      <label>Pais de Residencia</label>
+      <input type="text" class="form-control" placeholder="Pais de Residencia" name="paisResidencia">
+    </div>
+
+    <label for="">Estilo</label>
+
+    <select class="form-control" name="estilo">
+      <option value="Pop">Pop</option>
+      <option value="Rock">Rock</option>
+    </select>
+
+    <br>
+
+    <button type="submit" class="btn btn-success">Crear Artista</button>
+
+  </form>
+</div>
+

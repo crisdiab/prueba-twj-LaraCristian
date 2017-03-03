@@ -1,0 +1,24 @@
+<div class="row">
+
+  <% for(var i=0; i<albums.length; i++){ %>
+  <div class="col-sm-4">
+    <h3 class="text-center"> ID: <%=albums[i].id%>   </h3>
+    <img src="<%=albums[i].UrlPortada%>" alt="portada" width="100" height="100">
+
+    <h4 class="text-center"> <%=albums[i].idArtista.nombre%></h4>
+
+    <h4 class="text-center"> <%=albums[i].fechaLanzamiento%></h4>
+
+    <a style="color:white" href="/Album/destroy/<%=albums[i].id%>">
+      <button class="btn btn-block btn-danger"> Borrar</button>
+    </a>
+    <br>
+    <a style="color:white" href="/editarAlbum?id=<%=albums[i].id%>">
+      <button class="btn btn-block btn-success"> Editar</button>
+    </a>
+    <br>
+
+  </div>
+  <%  } %>
+
+</div>

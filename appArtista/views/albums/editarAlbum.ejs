@@ -1,0 +1,36 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Edita el Album  </h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <form action="Album/editarAlbum" method="post">
+        <div class="form-group">
+          <label for="exampleInputEmail1">URL PORTADA</label>
+          <input minlength=5 required type="text" class="form-control"  placeholder="Nombres" name="UrlPortada">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nombres</label>
+          <input minlength=5 required type="text" class="form-control"  placeholder="Nombres" name="nombre">
+        </div>
+
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Fecha de lanzamiento</label>
+          <input type="date" format="dd/MM/yyyy" class="form-control"  placeholder="fecha de lanzamiento Residencia" name="fechaLanzamiento">
+        </div>
+        <input type="hidden" name="id" value="<%=album.id%>">
+        <button type="submit" class="btn btn-success">Editar Usuario</button>
+        <br>
+
+      </form>
+    </div>
+    <div class="col-sm-4">
+
+
+
+    </div>
+  </div>
+
+
+</div>

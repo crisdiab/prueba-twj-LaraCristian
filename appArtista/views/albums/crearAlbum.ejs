@@ -1,0 +1,33 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Crea Album de <%=artista.nombre%></h1>
+
+
+
+  <form action="Album/crearAlbum" method="post">
+    <input type="hidden" name="idArtista" value="<%=artista.id%>">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input required type="text" class="form-control" placeholder="Nombre" name="nombre">
+    </div>
+
+    <div class="form-group">
+      <label>Fecha de lanzamiento</label>
+      <input type="date" format="dd/MM/yyyy" class="form-control" placeholder="Fecha de Lanzamiento" name="fechaLanzamiento">
+    </div>
+
+
+
+
+    <div class="form-group">
+      <label>Url Portada</label>
+      <input type="text" class="form-control" placeholder="Url de la portada" name="UrlPortada">
+    </div>
+
+    <br>
+
+    <button type="submit" class="btn btn-success">Crear Album</button>
+
+  </form>
+</div>
+
